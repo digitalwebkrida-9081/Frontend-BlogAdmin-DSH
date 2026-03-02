@@ -1,0 +1,74 @@
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--surface-color);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--surface-border);
+}
+
+.form-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  border-bottom: 1px solid var(--surface-border);
+  padding-bottom: 1rem;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--text-main);
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  background: #0d1117;
+  border: 1px solid var(--surface-border);
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: "Outfit", sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.2);
+}
+
+.form-focus input,
+.form-focus select,
+.form-focus textarea {
+  background: rgba(88, 166, 255, 0.03);
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--surface-border);
+}
+
+.form-actions button {
+  min-width: 120px;
+}
