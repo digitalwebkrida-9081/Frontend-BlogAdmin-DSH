@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (username, password) => {
     try {
       const res = await axios.post(
-        "https://stagservice.datasellerhub.com/api/auth/login",
+        `${import.meta.env.VITE_API_URL || "https://stagservice.datasellerhub.com/api"}/auth/login`,
         {
           username,
           password,

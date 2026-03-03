@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://stagservice.datasellerhub.com/api",
+  baseURL:
+    import.meta.env.VITE_API_URL || "https://stagservice.datasellerhub.com/api",
 });
 
 // Request interceptor for API calls
