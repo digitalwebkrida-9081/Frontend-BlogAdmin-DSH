@@ -67,7 +67,7 @@ const CreatePost = () => {
           },
         },
       );
-      setFormData((prev) => ({ ...prev, imageUrl: res.data.imageUrl }));
+      setFormData((prev) => ({ ...prev, imageUrl: res.data.url }));
     } catch (error) {
       console.error("Image upload failed:", error);
       alert("Image upload failed.");
